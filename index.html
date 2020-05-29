@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Everyday recipes
+	</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		/* for desktop */
+		@media only screen and (max-width: 800px) {
+			.menu {
+				width: 80%;
+			}
+		}
+
+		@media only screen and (max-width: 1080px) {
+			span.border {
+				display: contents;
+			}
+		}
+
+		@media only screen and (min-width: 953px) {
+			.left-text {
+				position: relative;
+				left: 2em;
+				top: -1em;
+			}
+		}
+
+		@media (max-width: 953px) {
+			body {
+				margin: 0em !important;
+			}
+		}
+
+		@media (max-width: 953px) {
+			.responsive-img {
+				margin-left: 1em;
+			}
+		}
+
+		@media (max-width:790px) {
+			.top-nav {
+				border: none !important;
+			}
+		}
+
+
+		body {
+			background-color: blanchedalmond;
+			margin: 1.5em;
+		}
+
+		hr {
+			display: block;
+			margin-top: 1.5em;
+			margin-bottom: 1.5em;
+			margin-left: 2rem;
+			margin-right: 2rem;
+			border-style: dashed;
+			border-width: 1px;
+			color: wheat;
+		}
+
+		h1 {
+			letter-spacing: 2px;
+			left: 1rem;
+		}
+
+		h2 {
+			letter-spacing: -1px;
+			left: 1rem;
+		}
+
+		header {
+			background-color: wheat;
+			padding: 1em;
+		}
+
+		.top-nav {
+			background-color: blanchedalmond;
+			overflow: hidden;
+			border-width: 1px 0px 1px 0px;
+			border-style: solid;
+			border-color: crimson;
+		}
+
+		.top-nav a {
+			float: left;
+			text-align: center;
+			padding: 1em 1.5em;
+			text-decoration: none;
+			color: black;
+			font-size: 18px;
+			font-family: monospace;
+		}
+
+		.top-nav a:hover {
+			background-color: wheat;
+			color: crimson;
+		}
+
+		.top-nav a.active {
+			background-color: crimson;
+			color: white;
+		}
+
+		.content {
+			background-color: wheat;
+			padding: 0.5em 2.5em 0.5em 0.5em;
+		}
+
+		/* .left-text {
+			position: relative;
+			left: 2em;
+			top: -1em;
+			} */
+
+		.first-text {
+			color: crimson;
+			font-family: monospace;
+		}
+
+		.second-text {
+			color: black;
+			font-family: monospace;
+			letter-spacing: 2px;
+		}
+
+		.resize-image {
+			width: 700px;
+			height: 550px;
+			float: left;
+			vertical-align: middle;
+		}
+
+		.first-text-size {
+			font-size: 24px;
+		}
+
+		.second-text-size {
+			font-size: 18px;
+		}
+
+		.align-list {
+			display: inline-block;
+			text-align: left;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.justify {
+			text-align: justify;
+		}
+
+		.border {
+			border: 1px solid crimson;
+			border-collapse: separate;
+			padding: 0.3em 0.5em;
+		}
+
+		.responsive-img {
+			max-width: 100%;
+			height: auto;
+		}
+
+
+
+		/* .container {
+			display: inline;
+			position: relative;
+			margin-left: 1em;
+			padding-left: 1em;
+			cursor: pointer; 
+			}
+
+			.container input {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+			height: 0;
+			width: 0;
+			}
+
+			.checkmark {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 15px;
+			width: 15px;
+			background-color:whitesmoke;
+			} */
+	</style>
+
+</head>
+
+
+
+<body>
+
+	<header>
+
+		<h1 class="first-text"> Everyday<br>
+			Recipes.</h1>
+		<h2 class="first-text">For those who like to eat, but don't like to cook.</h2>
+	</header>
+
+	<div class="top-nav second-text-size menu">
+		<a class="active" href="#home">Home</a>
+		<a href="#10minmeal"><strong>10 minute recipes</strong></a>
+		<a href="#20minmeal"><strong>20 minute recipes</strong></a>
+		<a href="#30minmeal"><strong>30 minute recipes</strong></a>
+		<a href="#holidaysandoccasions"><strong>Holidays and occasions</strong></a>
+	</div>
+
+
+
+	<div id="10minmeal" class="content">
+
+		<div> <a href="https://ibb.co/MRCv7Fn"><img class="resize-image responsive-img"
+					src="https://i.ibb.co/cNrBQ4J/10min.jpg" alt="10minmeal"></a> </div>
+
+		<div class="left-text center">
+
+			<p class="first-text first-text-size center"><span class="border"><strong>Salata cu chestii</strong></span>
+			</p>
+
+			<p class="second-text second-text-size"> Ingredients:</p>
+
+			<ul class="second-text second-text-size align-list">
+				<li>milk</li>
+				<li>cheese</li>
+				<li>milk</li>
+				<li>cheese</li>
+				<li>milk</li>
+			</ul>
+
+			<p class="first-text first-text-size center"><strong>Directions:</strong></p>
+
+			<ol class="justify">
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+					ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident,
+					sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+			</ol>
+		</div>
+	</div>
+
+	<hr>
+
+	<div id="20minmeal" class="content">
+
+		<div> <a href="https://ibb.co/995BdKm"><img class="resize-image responsive-img"
+					src="https://i.ibb.co/rGrqX8K/20min.jpg" alt="20minmeal"></a> </div>
+
+		<div class="left-text center">
+
+			<p class="first-text first-text-size center"><span class="border"><strong>Noodles cu chestii</strong></span>
+			</p>
+
+			<p class="second-text second-text-size"> Ingredients:</p>
+
+			<ul class="second-text second-text-size align-list">
+				<li>milk</li>
+				<li>cheese</li>
+				<li>milk</li>
+				<li>cheese</li>
+				<li>milk</li>
+			</ul>
+			<p class="first-text first-text-size center"><strong>Directions:</strong></p>
+
+			<ol class="justify">
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+					ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident,
+					sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+			</ol>
+		</div>
+	</div>
+
+
+
+	<hr>
+
+	<div id="30minmeal" class="content">
+
+		<div> <a href="https://ibb.co/FBH5GVR"><img class="resize-image responsive-img"
+					src="https://i.ibb.co/gD4SsVk/30min.jpg" alt="30minmeal"></a> </div>
+
+		<div class="left-text center">
+
+			<p class="first-text first-text-size center"><span class="border"><strong>Falafel cu chestii</strong></span>
+			</p>
+
+			<p class="second-text second-text-size"> Ingredients:</p>
+
+			<ul class="second-text second-text-size align-list">
+				<li>milk</li>
+				<li>cheese</li>
+				<li>milk</li>
+				<li>cheese</li>
+				<li>milk</li>
+			</ul>
+			<p class="first-text first-text-size center"><strong>Directions:</strong></p>
+
+			<ol class="justify">
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+					ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident,
+					sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+			</ol>
+		</div>
+	</div>
+
+	<hr>
+
+	<div id="holidaysandoccasions" class="content">
+
+		<div><a href="https://ibb.co/gjCWmMR"><img class="resize-image responsive-img"
+					src="https://i.ibb.co/Wx1zGW2/holiday.jpg" alt="holiday"></a> </div>
+
+		<div class="left-text center">
+
+			<p class="first-text first-text-size center"><span class="border"><strong>Holidays and
+						Occasions</strong></span></p>
+
+			<p class="second-text second-text-size"> Ingredients:</p>
+
+			<ul class="second-text second-text-size align-list">
+				<li>milk</li>
+				<li>cheese</li>
+				<li>milk</li>
+				<li>cheese</li>
+				<li>milk</li>
+			</ul>
+			<p class="first-text first-text-size center"><strong>Directions:</strong></p>
+
+			<ol class="justify">
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+					ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident,
+					sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+			</ol>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- <div class="content justify"><form action="/Search"> 
+
+
+				<label class="container">Vegan
+					<input type="checkbox" checked="checked">
+					<span class="checkmark"></span>
+				  </label>
+
+				<label class="container">Vegetarian
+					<input type="checkbox" checked="checked">
+					<span class="checkmark"></span>
+				  </label>
+
+				  <label class="container">Carnivore
+					<input type="checkbox" checked="checked">
+					<span class="checkmark"></span>
+				  </label>
+
+				<br>
+
+				<label class="container">10 minutes
+					<input type="checkbox" checked="checked">
+					<span class="checkmark"></span>
+				  </label>
+
+				  <label class="container">20 minutes
+					<input type="checkbox" checked="checked">
+					<span class="checkmark"></span>
+				  </label>
+
+				  <label class="container">30 minutes
+					<input type="checkbox" checked="checked">
+					<span class="checkmark"></span>
+				  </label>
+
+				  <label class="container">Holidays and occasions
+					<input type="checkbox" checked="checked">
+					<span class="checkmark"></span>
+				  </label>
+				<button type="submit">Submit</button>
+
+			  </form> -->
+
+
+
+
+	</div>
+
+</body>
+
+</html>
