@@ -90,6 +90,10 @@
 			border-width: 1px 0px 1px 0px;
 			border-style: solid;
 			border-color: crimson;
+			position: sticky; 
+  			z-index: 10;
+			top:0; 
+			width: 100%;
 		}
 
 		.top-nav a {
@@ -114,14 +118,8 @@
 
 		.content {
 			background-color: wheat;
-			padding: 0.5em 2.5em 0.5em 0.5em;
+			padding: 0.5em 2.5em 0.2em 0.5em;
 		}
-
-		/* .left-text {
-			position: relative;
-			left: 2em;
-			top: -1em;
-			} */
 
 		.first-text {
 			color: crimson;
@@ -139,6 +137,7 @@
 			height: 550px;
 			float: left;
 			vertical-align: middle;
+			padding-bottom: 1em;
 		}
 
 		.first-text-size {
@@ -159,7 +158,7 @@
 		}
 
 		.justify {
-			text-align: justify;
+			text-align: justify;						
 		}
 
 		.border {
@@ -207,7 +206,7 @@
 
 <body>
 
-	<header>
+	<header id="header">
 
 		<h1 class="first-text"> Everyday<br>
 			Recipes.</h1>
@@ -215,7 +214,7 @@
 	</header>
 
 	<div class="top-nav second-text-size menu">
-		<a class="active" href="#home">Home</a>
+		<a class="active" href="#header">Home</a>
 		<a href="#10minmeal"><strong>10 minute recipes</strong></a>
 		<a href="#20minmeal"><strong>20 minute recipes</strong></a>
 		<a href="#30minmeal"><strong>30 minute recipes</strong></a>
@@ -350,7 +349,7 @@
 
 	<div id="holidaysandoccasions" class="content">
 
-		<div>><img src="holiday.jpg" class="resize-image responsive-img" alt="holiday"></a> </div>
+		<div><img src="holiday.jpg" class="resize-image responsive-img" alt="holiday"></a> </div>
 
 		<div class="left-text center">
 
@@ -381,7 +380,13 @@
 					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
 					pariatur. Excepteur sint occaecat cupidatat non proident,
 					sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-				<!-- <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li> -->
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+					ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident,
+					unt in culpa qui officia deserunt mollit anim id est laborum.</li>	
+				
 			</ol>
 		</div>
 	</div>
