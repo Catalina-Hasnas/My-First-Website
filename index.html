@@ -6,198 +6,101 @@
 		Everyday recipes
 	</title>
 
+	<link rel="stylesheet" type="text/css" href="Stylesheet.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<style>
-		* {
-			box-sizing: border-box;
-		}
 
-		/* for desktop */
-		@media only screen and (max-width: 800px) {
-			.menu {
-				width: 80%;
-			}
-		}
+	.flex-nav {
+		display: flex;
+		/* flex-wrap: wrap; */
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		background-color: blanchedalmond;
+		margin: 0px;
+		border-width: 1px 0px 1px 0px;
+        border-style: solid;
+		border-color: crimson;
+		position: sticky; 
+        z-index: 10;
+        top:0; 
+		width: 100%;
+		list-style-type: none;
+		height: 55px;
+	}
 
-		@media only screen and (max-width: 1080px) {
-			span.border {
-				display: contents;
-			}
-		}
+	.flex-nav a {
+		text-decoration: none;
+        color: black;
+        font-size: 18px;
+		font-family: monospace;
+	}
 
-		@media only screen and (min-width: 953px) {
-			.left-text {
-				position: relative;
-				left: 2em;
-				top: -1em;
-			}
-		}
+	.flex-nav a:hover {
+        background-color: wheat;
+		color: crimson;
+		/* padding-top: 15.5px;
+		padding-bottom: 15.5px;
+		padding-left: 5px;
+		padding-right: 5px; */
+	}
+	
+	.flex-nav a.active {
+        background-color: crimson;
+		color: white;
+		padding: 17px;
+    }
+	
+	.search {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid crimson;
+	}
 
-		@media (max-width: 953px) {
-			body {
-				margin: 0em !important;
-			}
-		}
+	.search .search-term {
+		/* width: 100%; */
+		outline: none;
+		background-color: linen;
+		width: 165px;
+		height: 53.5px;
+		/* padding: 18px 25px; */
+		border: none;
+		transition: 0.2s ease-out; 
+	}
 
-		@media (max-width: 953px) {
-			.responsive-img {
-				margin-left: 1em;
-			}
-		}
+	.search .search-button {
+		/* padding: 8px 16px;  */
+		width: 50px;
+		height: 53.5px;
+		margin: 0px;
+		background: crimson;
+		border: none;
+		cursor: pointer;
+		font-size: 19px;
+		transition: 0.2s ease-out; 
+	}
 
-		@media (max-width:790px) {
-			.top-nav {
-				border: none !important;
-			}
-		}
+	.search .search-term:focus {
+		background-color:lightcoral;
+	}
 
+	.search .search-button:focus {
+		font-size: 21px;
+	}
 
-		body {
-			background-color: blanchedalmond;
-			margin: 1.5em;
-		}
+	.search .search-button i{
 
-		hr {
-			display: block;
-			margin-top: 1.5em;
-			margin-bottom: 1.5em;
-			margin-left: 2rem;
-			margin-right: 2rem;
-			border-style: dashed;
-			border-width: 1px;
-			color: wheat;
-		}
-
-		h1 {
-			letter-spacing: 2px;
-			left: 1rem;
-		}
-
-		h2 {
-			letter-spacing: -1px;
-			left: 1rem;
-		}
-
-		header {
-			background-color: wheat;
-			padding: 1em;
-		}
-
-		.top-nav {
-			background-color: blanchedalmond;
-			overflow: hidden;
-			border-width: 1px 0px 1px 0px;
-			border-style: solid;
-			border-color: crimson;
-			position: sticky; 
-  			z-index: 10;
-			top:0; 
-			width: 100%;
-		}
-
-		.top-nav a {
-			float: left;
-			text-align: center;
-			padding: 1em 1.5em;
-			text-decoration: none;
-			color: black;
-			font-size: 18px;
-			font-family: monospace;
-		}
-
-		.top-nav a:hover {
-			background-color: wheat;
-			color: crimson;
-		}
-
-		.top-nav a.active {
-			background-color: crimson;
-			color: white;
-		}
-
-		.content {
-			background-color: wheat;
-			padding: 0.5em 2.5em 0.2em 0.5em;
-		}
-
-		.first-text {
-			color: crimson;
-			font-family: monospace;
-		}
-
-		.second-text {
-			color: black;
-			font-family: monospace;
-			letter-spacing: 2px;
-		}
-
-		.resize-image {
-			width: 700px;
-			height: 550px;
-			float: left;
-			vertical-align: middle;
-			padding-bottom: 1em;
-		}
-
-		.first-text-size {
-			font-size: 24px;
-		}
-
-		.second-text-size {
-			font-size: 18px;
-		}
-
-		.align-list {
-			display: inline-block;
-			text-align: left;
-		}
-
-		.center {
-			text-align: center;
-		}
-
-		.justify {
-			text-align: justify;						
-		}
-
-		.border {
-			border: 1px solid crimson;
-			border-collapse: separate;
-			padding: 0.3em 0.5em;
-		}
-
-		.responsive-img {
-			max-width: 100%;
-			height: auto;
-		}
+		  color: white;
+		  font-weight:lighter;
+		  
+}
 
 
 
-		/* .container {
-			display: inline;
-			position: relative;
-			margin-left: 1em;
-			padding-left: 1em;
-			cursor: pointer; 
-			}
-
-			.container input {
-			position: absolute;
-			opacity: 0;
-			cursor: pointer;
-			height: 0;
-			width: 0;
-			}
-
-			.checkmark {
-			position: absolute;
-			top: 0;
-			left: 0;
-			height: 15px;
-			width: 15px;
-			background-color:whitesmoke;
-			} */
 	</style>
 
 </head>
@@ -213,14 +116,25 @@
 		<h2 class="first-text">For those who like to eat, but don't like to cook.</h2>
 	</header>
 
-	<div class="top-nav second-text-size menu">
-		<a class="active" href="#header">Home</a>
-		<a href="#10minmeal"><strong>10 minute recipes</strong></a>
-		<a href="#20minmeal"><strong>20 minute recipes</strong></a>
-		<a href="#30minmeal"><strong>30 minute recipes</strong></a>
-		<a href="#holidaysandoccasions"><strong>Holidays and occasions</strong></a>
-		<a href="Contacts.html"><strong>Contacts</strong></a>
-	</div>
+	<nav>  
+		<div class="flex-nav"> 
+		  <a class="active" href="#header">Home</a>
+		  <a href="#10minmeal"><strong>10 minute recipes</strong></a>
+		  <a href="#20minmeal"><strong>20 minute recipes</strong></a>
+		  <a href="#30minmeal"><strong>30 minute recipes</strong></a>
+		  <a href="#holidaysandoccasions"><strong>Holidays and occasions</strong></a> 
+		  <a href="Contacts.html"><strong>Contacts</strong></a>  
+
+				<div class="search">
+					<input type="text" class="search-term" placeholder="  Search...">
+					<button type="submit" class="search-button">
+					<i class="fa fa-search"></i>
+					</button>
+				</div>
+
+		</div>  
+	</nav>
+	  
 
 
 
