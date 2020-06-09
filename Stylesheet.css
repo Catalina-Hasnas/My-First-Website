@@ -1,0 +1,163 @@
+
+       * {
+        box-sizing: border-box;
+    } 
+
+    /* for desktop */
+    @media only screen and (max-width: 800px) {
+        .menu {
+            width: 80%;
+        }
+    }
+
+    @media only screen and (max-width: 1080px) {
+        span.border {
+            display: contents;
+        }
+    }
+
+    @media only screen and (min-width: 953px) {
+        .left-text {
+            position: relative;
+            left: 2em;
+            top: -1em;
+        }
+    }
+
+    @media (max-width: 953px) {
+        body {
+            margin: 0em !important;
+        }
+    }
+
+    @media (max-width: 953px) {
+        .responsive-img {
+            margin-left: 1em;
+        }
+    }
+
+    @media (max-width:790px) {
+        .top-nav {
+            border: none !important;
+        }
+    }
+
+
+    body {
+        background-color: blanchedalmond;
+        margin: 1.5em;
+    }
+
+    hr {
+        display: block;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        border-style: dashed;
+        border-width: 1px;
+        color: wheat;
+    }
+
+    h1 {
+        letter-spacing: 2px;
+        left: 1rem;
+    }
+
+    h2 {
+        letter-spacing: -1px;
+        left: 1rem;
+    }
+
+    header {
+        background-color: wheat;
+        padding: 1em;
+    }
+
+    .top-nav {
+        background-color: blanchedalmond;
+        overflow: hidden;
+        border-width: 1px 0px 1px 0px;
+        border-style: solid;
+        border-color: crimson;
+        position: sticky; 
+        z-index: 10;
+        top:0; 
+        width: 100%;
+    }
+
+    .top-nav a {
+        float: left;
+        text-align: center;
+        padding: 1em 1.5em;
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-family: monospace;
+    }
+
+    .top-nav a:hover {
+        background-color: wheat;
+        color: crimson;
+    }
+
+    .top-nav a.active {
+        background-color: crimson;
+        color: white;
+    }
+
+    .content {
+        background-color: wheat;
+        padding: 0.5em 2.5em 0.2em 0.5em;
+    }
+
+    .first-text {
+        color: crimson;
+        font-family: monospace;
+    }
+
+    .second-text {
+        color: black;
+        font-family: monospace;
+        letter-spacing: 2px;
+    }
+
+    .resize-image {
+        width: 700px;
+        height: 550px;
+        float: left;
+        vertical-align: middle;
+        padding-bottom: 1em;
+    }
+
+    .first-text-size {
+        font-size: 24px;
+    }
+
+    .second-text-size {
+        font-size: 18px;
+    }
+
+    .align-list {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .justify {
+        text-align: justify;						
+    }
+
+    .border {
+        border: 1px solid crimson;
+        border-collapse: separate;
+        padding: 0.3em 0.5em;
+    }
+
+    .responsive-img {
+        max-width: 100%;
+        height: auto;
+    } 
